@@ -1,0 +1,175 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap);
+
+/* ===== BASIC BEGIN ===== */
+html,
+body {
+  background-color: #eef3f4;
+  font-family: Roboto, 'Noto Sans JP', sans-serif;
+  color: #585858;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #3280e7;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+button,
+input,
+textarea {
+  font-family: inherit;
+  box-sizing: border-box;
+}
+button {
+  background-color: initial;
+  border: initial;
+  cursor: pointer;
+  outline: initial;
+  padding: initial;
+  appearance: initial;
+  -webkit-appearance: none;
+  border-radius: initial;
+  font-size: inherit;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+/* ===== BASIC END ===== */
+
+/* ===== PAGE PARTS BEGIN ===== */
+.page-cover {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.page-title {
+  text-align: center;
+  padding: 10px 0;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 25px;
+}
+.page-divider {
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto 20px auto;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+}
+/* ===== PAGE PARTS END ===== */
+
+/* ===== NOTIFICATION AREA BEGIN ===== */
+.action-success-area {
+  width: max-content;
+  margin: 10px auto;
+  padding: 5px 15px;
+  color: #388e3c;
+  border: solid 2px #388e3c;
+  border-radius: 4px;
+}
+.action-failed-area {
+  width: max-content;
+  margin: 10px auto;
+  padding: 5px 15px;
+  color: #bb1850;
+  border: solid 2px #bb1850;
+  border-radius: 4px;
+}
+/* ===== NOTIFICATION AREA END ===== */
+
+/* ===== NEW MESSAGE FORM AREA BEGIN ===== */
+.form-cover {
+  margin: 0 auto;
+  width: 90%;
+}
+.form-input-title {
+  font-size: 0.875rem;
+  padding: 10px;
+}
+.form-input-error {
+  color: #bb1850;
+  font-size: 0.875rem;
+  padding: 0 10px;
+}
+.input-author-name {
+  font-size: 16px;
+  width: 100%;
+  height: 2em;
+  border: 1px solid rgba(236, 234, 234, 0.5);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.input-message {
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid rgba(236, 234, 234, 0.5);
+  border-radius: 5px;
+  height: 100px;
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+  min-height: 100px;
+  max-height: 500px;
+}
+.input-submit-button {
+  background-color: #333333;
+  border: 2px solid #333333;
+  color: #ffffff;
+  margin: 15px auto;
+  padding: 5px;
+  display: block;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 200px;
+}
+.input-submit-button:hover {
+  background-color: #ffffff;
+  border: 2px solid #59b1eb;
+  color: #59b1eb;
+}
+/* ===== NEW MESSAGE FORM AREA END ===== */
+
+/* ===== MESSAGE LIST AREA BEGIN ===== */
+.message-list-cover {
+  margin: 0 auto;
+  width: 90%;
+}
+.message-item {
+  background-color: #ffffff;
+  margin-bottom: 16px;
+  padding: 8px 16px;
+  overflow-wrap: break-word;
+  border-radius: 4px;
+}
+.message-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 4px;
+}
+.message-title .spacer {
+  flex-grow: 1;
+}
+@media screen and (min-width: 500px) {
+  .message-title {
+    flex-direction: row;
+    align-items: end;
+  }
+}
+.message-line {
+  min-height: 1em;
+}
+.message-delete-button {
+  color: #3280e7;
+  min-width: max-content;
+}
+.message-delete-button:hover {
+  text-decoration: underline;
+}
+/* ===== MESSAGE LIST AREA END ===== */
